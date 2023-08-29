@@ -1,0 +1,41 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per column */
+    grid-auto-rows: minmax(100px, auto); /* Adjust the row height as needed */
+    gap: 50px; 
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+
+  .galleryPics{
+    margin: 10rem 16rem;
+  }
+
+  
+  .text{
+    color: white;
+    font-size: -webkit-xxx-large;
+    font-weight: 500;
+    margin-top: 8rem;
+  }
+
+  @media screen  and (max-width:480px){
+    
+        
+       .galleryPics {
+            margin: 4rem 1rem;
+        }
+    
+        .text{
+            color: white;
+   
+    font-weight: 500;
+    margin-top: 3rem;
+    font-size: xx-large;
+        }
+    
+  }

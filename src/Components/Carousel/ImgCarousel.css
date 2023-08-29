@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  .carousel {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 1rem;
+  }
+  
+  /* Style for carousel images */
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+
+.carousel .carousel-slider .slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .carousel .carousel-slider .slide.selected {
+    opacity: 1;
+  }
+  
+  /* Apply a zoom-in effect during transitions */
+  .carousel .carousel-slider .slide {
+    transform: scale(0.8);
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel .carousel-slider .slide.selected {
+    transform: scale(1);
+  }
+  
+
+  /* Media queries for responsive design */
+  @media screen and (max-width: 768px) {
+    .carousel {
+      width: 90%;
+    }
+  }
+  
+
+
+  @media screen and (max-width:480px) {
+    
+    .carousel-container{
+      height: 39vh;
+    }
+  }
